@@ -1,0 +1,7 @@
+chkdsk /f /quiet
+sfc /scannow /quiet
+cleanmgr.exe /quiet
+defrag C: /quiet
+Fsutil behavior query memoryusage /quiet
+Fsutil behavior set memoryusage 2 /quiet
+bcdedit /set increaseuserva 4000 /quiet
